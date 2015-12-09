@@ -1,0 +1,25 @@
+---
+theme: default
+
+path:
+    frontsize: ./ # compile.scss path
+    test: test/csslint/
+    css: test/html/css/
+    images: test/html/img/
+    fonts: test/html/fonts/
+    js: test/html/js/
+
+vendors:
+    css:
+        - src/vendors/normalize-css/normalize.css
+   # fonts:
+   #     - src/vendors/font/font-file.ttf
+   # images:
+   #     - src/vendors/other/image.svg
+
+# js:
+    # name: frontsize.min.js
+    # watch: src/js/**/*
+    # files:
+        # - src/vendors/file.js
+        # - src/js/file.js

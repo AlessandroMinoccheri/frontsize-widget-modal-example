@@ -1,0 +1,37 @@
+{
+  "name": "frontsize-sass",
+  "version": "3.12.62",
+  "homepage": "https://github.com/ideatosrl/frontsize-sass",
+  "authors": [
+    "Vittorio Vittori <me@vittoriovittori.com>",
+    "Alessandro Minoccheri <alessandro.minoccheri@gmail.com>"
+  ],
+  "description": "A fully customizable CSS generator to ease your life",
+  "main": "compile.scss",
+  "keywords": [
+    "css",
+    "sass",
+    "front-end",
+    "framework",
+    "frontsize"
+  ],
+  "license": "MIT",
+  "ignore": [
+    ".editorconfig",
+    ".gitignore",
+    ".jshintrc",
+    ".sassdocrc",
+    ".templates",
+    ".travis.yml",
+    "bower_components",
+    "frontsize.yml.travis",
+    "node_modules",
+    "test"
+  ],
+  "devDependencies": {
+    "include-js": "~1.2.2"
+  },
+  "dependencies": {
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}
