@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 
     var cssTestFileName = 'frontsize.csslint.css';
 
-    var frontsize = grunt.file.readYAML('frontsize.yml');
+    var frontsize = grunt.file.readYAML('frontsize.yml.dist');
     if (frontsize.vendors !== undefined && frontsize.vendors.css !== undefined) {
         frontsize.css = frontsize.vendors.css.slice(0);
         frontsize.css.push(frontsize.path.test + cssTestFileName);

@@ -1,0 +1,94 @@
+/*!
+Frontsize: http://frontsize.com
+GitHub:    https://github.com/ideatosrl/frontsize-sass
+License:   MIT Licence
+Version:   3.12.62
+Date:      2015-11-26 12:07
+Authors:   Vittorio Vittori, Alessandro Minoccheri
+*/
+* {
+  -webkit-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+span[title],
+div[title],
+b[title],
+strong[title] {
+  cursor: help;
+}
+span[title]:hover,
+div[title]:hover,
+b[title]:hover,
+strong[title]:hover {
+  text-decoration: underline;
+}
+
+a[title],
+a strong[title],
+a span[title],
+a div[title],
+a b[title] {
+  cursor: pointer;
+}
+
+p,
+blockquote,
+dl, dt, dd,
+figure,
+figcaption,
+div,
+hr,
+article,
+nav,
+aside,
+main,
+section,
+header,
+footer,
+h1, h2, h3, h4, h5, h6
+hgroup,
+address {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  text-align: left;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav ul li {
+  margin-left: 0;
+}
+
+.modal-unfolding.one {
+  transform: scaleY(0.01) scaleX(0);
+  animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+.modal-unfolding.one .modal-background .modal {
+  transform: scale(0);
+  animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+.modal-unfolding.one.out {
+  transform: scale(1);
+  animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+.modal-unfolding.one.out .modal-background .modal {
+  animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+/*# sourceMappingURL=frontsize-theme.min.css.map */
