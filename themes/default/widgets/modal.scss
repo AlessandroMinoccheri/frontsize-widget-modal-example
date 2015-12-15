@@ -55,7 +55,7 @@
   }
   &.uncovering {
     z-index: 0;
-    transform: scale(1);
+    @include scale(1);
     .modal-background {
       background: rgba(0,0,0,.6);
       .modal {
@@ -63,7 +63,7 @@
       }
     }
     + .content {
-      z-index:1;
+      z-index: 1;
       animation: slideUpLarge .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
     }
     &.out {
@@ -79,7 +79,7 @@
   }
   &.blow-up {
     z-index: 0;
-    transform: scale(1);
+    @include scale(1);
     .modal-background {
       background: rgba(0,0,0,.7);
       .modal {
@@ -102,12 +102,12 @@
     }
   }
   &.meep-meep {
-    transform: scale(1);
+    @include scale(1);
     .modal-background {
       background: rgba(0,0,0,.0);
       animation: fadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
       .modal {
-        transform: translateX(-1500px);
+        @include translateX(-1500px);
         animation: roadRunnerIn .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
       }
     }
@@ -122,12 +122,12 @@
     }
   }
   &.sketch {
-    transform: scale(1);
+    @include scale(1);
     .modal-background {
       background: rgba(0,0,0,.0);
       animation: fadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
       .modal {
-        background-color:transparent;
+        background-color: transparent;
         animation: modalFadeIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
         h2,p {
           opacity: 0;
@@ -160,7 +160,7 @@
     }
   }
   &.bond {
-    transform: scale(1);
+    @include scale(1);
     .modal-background {
       background: rgba(0,0,0,.0);
       animation: fadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
@@ -271,13 +271,16 @@
 
 @keyframes unfoldIn {
   0% {
-    transform: scaleY(.005) scaleX(0);
+    @include scaleY(.005);
+    @include scaleX(0);
   }
   50% {
-    transform: scaleY(.005) scaleX(1);
+    @include scaleY(.005);
+    @include scaleX(1);
   }
   100% {
-    transform: scaleY(1) scaleX(1);
+    @include scaleY(1);
+    @include scaleX(1);
   }
 }
 
