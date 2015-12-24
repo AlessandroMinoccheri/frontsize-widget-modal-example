@@ -1,2 +1,2 @@
 # frontsize-widget-modal-example
-Modal animations with frontsize
+Example of modal animations with frontsize
